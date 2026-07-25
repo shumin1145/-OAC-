@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Old Ai Chat</string>
+    <string name="settings_title">Settings</string>
+
+    <!-- Main screen -->
+    <string name="hint_input">Type a message…</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_new_chat">New chat</string>
+    <string name="btn_open_drawer">Open sidebar</string>
+    <string name="btn_back">Back</string>
+    <string name="empty_chat">Start a new conversation</string>
+    <string name="empty_conversations">No conversations</string>
+
+    <!-- Sidebar -->
+    <string name="drawer_title">Conversations</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_new">New chat</string>
+    <string name="action_clear">Clear all</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_rename">Rename</string>
+
+    <!-- Settings -->
+    <string name="set_models">Model Config</string>
+    <string name="set_models_summary">Add / edit available AI models</string>
+    <string name="set_active_model">Current model</string>
+    <string name="set_no_active">Not selected</string>
+    <string name="set_add_model">Add model</string>
+    <string name="set_edit_model">Edit</string>
+    <string name="set_name">Display name</string>
+    <string name="set_name_hint">e.g. DeepSeek / Kimi</string>
+    <string name="set_api_url">API URL</string>
+    <string name="set_api_url_hint">e.g. https://api.deepseek.com/v1/chat/completions</string>
+    <string name="set_model_id">Model ID</string>
+    <string name="set_model_id_hint">e.g. deepseek-chat / moonshot-v1-8k</string>
+    <string name="set_api_key">API Key</string>
+    <string name="set_api_key_hint">sk-xxxxxxxx</string>
+    <string name="set_temperature">Temperature</string>
+    <string name="set_max_tokens">Max tokens</string>
+    <string name="set_system_prompt">System prompt</string>
+    <string name="set_system_prompt_hint">You are a helpful assistant…</string>
+    <string name="set_save">Save</string>
+    <string name="set_cancel">Cancel</string>
+    <string name="set_delete">Delete</string>
+    <string name="set_activate">Activate</string>
+    <string name="set_stream">Stream output</string>
+    <string name="set_stream_summary">Show reply in real time (off returns all at once)</string>
+    <string name="set_language">Language</string>
+    <string name="set_language_summary">Switch app display language</string>
+    <string name="lang_chinese">中文</string>
+    <string name="lang_english">English</string>
+    <string name="lang_select_title">Select language</string>
+    <string name="privacy_title">Old Ai Chat Privacy Agreement</string>
+    <string name="privacy_message">1. This software is a free, non-commercial AI chat client designed for old Android systems only.\n\n2. All chat records and configuration information are stored locally on your device and will be deleted upon uninstallation. The software does not actively upload any personal data.\n\n3. Conversation content is sent only to the third-party AI API endpoints that you configure yourself. The software does not operate servers or relay data.\n\n4. The software requests only network permission and does not access contacts, files, location, or other private content.\n\n5. Data policies of third-party AI services are governed by their respective providers. By using this software, you acknowledge and agree to the above terms.</string>
+    <string name="privacy_agree">OK</string>
+    <string name="privacy_reject">KO</string>
+    <string name="set_about">About</string>
+    <string name="set_about_text">App name: Old Ai Chat (Open Source Release)\n\nCurrent version: 1.0 (based on 1.5beta)\n\nFeedback or suggestions: QQ group 231804847\n\nCompatibility: Android 2.3+\n\nProtocol: OpenAI-compatible API. Please refer to the model configuration guide for API setup.\n\nNote: The open-source release no longer provides a public API. Please use your own.\n\nFirst project build: 2026.7.21 yes, 0721!\nCiallo～(∠・ω&lt; )⌒★\n\nUpdated: 2026.7.25</string>
+    <string name="set_test">Test connection</string>
+    <string name="set_testing">Testing…</string>
+    <string name="set_test_ok">[OK] Test succeeded</string>
+    <string name="set_test_fail">[Fail] Test failed</string>
+    <string name="set_thinking_mode">Thinking mode</string>
+    <string name="set_think_default">Default</string>
+    <string name="set_think_on">Think on</string>
+    <string name="set_think_off">No thinking</string>
+
+    <!-- Conversation -->
+    <string name="role_user">Me</string>
+    <string name="role_assistant">AI</string>
+    <string name="role_system">System</string>
+    <string name="reasoning_header">[Reasoning]</string>
+    <string name="reasoning_expand">[Reasoning+]</string>
+    <string name="reasoning_collapse">[Reasoning-]</string>
+    <string name="msg_loading">Thinking…</string>
+    <string name="msg_error">Request failed: %1$s</string>
+    <string name="msg_no_model">No available model. Please add one in Settings!</string>
+    <string name="msg_empty_input">Please enter something</string>
+    <string name="msg_network">Network unavailable</string>
+    <string name="msg_load_settings_failed">Settings load failed: %1$s</string>
+    <string name="msg_load_ui_failed">UI load failed: %1$s</string>
+    <string name="msg_init_failed">Initialization failed: %1$s</string>
+    <string name="msg_language_set_failed">Language setup failed: %1$s</string>
+    <string name="msg_drawer_load_failed">Sidebar load failed</string>
+    <string name="msg_delete_failed">Delete failed: %1$s</string>
+    <string name="msg_clear_failed">Clear failed: %1$s</string>
+    <string name="msg_create_failed">Create failed: %1$s</string>
+    <string name="msg_send_failed">Send failed: %1$s</string>
+    <string name="msg_switched_to">Switched to %1$s</string>
+    <string name="msg_add_model_first">Please add a model first</string>
+    <string name="msg_load_dialog_failed">Dialog load failed: %1$s</string>
+    <string name="msg_show_dialog_failed">Dialog show failed: %1$s</string>
+    <string name="msg_fill_name">Please enter a name</string>
+    <string name="msg_fill_api_url">Please enter API URL</string>
+    <string name="msg_fill_model_id">Please enter model ID</string>
+    <string name="msg_fill_api_key">Please enter API key</string>
+    <string name="msg_invalid_temperature">Invalid temperature</string>
+    <string name="msg_invalid_max_tokens">Invalid max tokens</string>
+    <string name="msg_save_failed">Save failed: %1$s</string>
+    <string name="msg_copied">Copied</string>
+    <string name="msg_confirm_clear">Clear all conversations?</string>
+    <string name="msg_confirm_delete">Delete this conversation?</string>
+    <string name="msg_yes">Yes</string>
+    <string name="msg_no">No</string>
+    <string name="msg_default_title">New chat</string>
+    <string name="hint_add_model">Tap + in the top right to add a model</string>
+    <string name="btn_add_custom_model">Add custom model</string>
+
+    <!-- Input dialog -->
+    <string name="dlg_rename_title">Rename conversation</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+</resources>

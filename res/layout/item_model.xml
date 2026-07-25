@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_edit"
+    android:padding="10dp"
+    android:layout_marginBottom="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_model_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tv_model_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingLeft="6dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_model_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingTop="2dp" />
+
+    <TextView
+        android:id="@+id/tv_model_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingTop="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/btn_model_activate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:text="@string/set_activate"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:layout_marginRight="4dp" />
+
+        <Button
+            android:id="@+id/btn_model_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:text="@string/set_edit_model"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" />
+
+        <Button
+            android:id="@+id/btn_model_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:text="@string/set_delete"
+            android:textColor="@color/error"
+            android:textSize="13sp"
+            android:layout_marginLeft="4dp" />
+    </LinearLayout>
+</LinearLayout>

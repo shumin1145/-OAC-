@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main">
+
+    <!-- 顶部栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_top_bar"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:textColor="@color/text_white"
+            android:textSize="22sp"
+            android:text="&lt;"
+            android:padding="0dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_title"
+            style="@style/TopBarText" />
+
+        <Button
+            android:id="@+id/btn_add_model"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:textColor="@color/text_white"
+            android:textSize="22sp"
+            android:text="+"
+            android:padding="0dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- 当前模型 -->
+            <TextView
+                style="@style/SettingsLabel"
+                android:text="@string/set_active_model"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_active_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SettingsValue"
+                android:background="@drawable/bg_edit"
+                android:padding="10dp"
+                android:text="@string/set_no_active" />
+
+            <!-- 流式输出开关 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SettingsLabel"
+                        android:text="@string/set_stream" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_stream_summary"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:paddingTop="2dp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_stream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- 语言设置 -->
+            <LinearLayout
+                android:id="@+id/row_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SettingsLabel"
+                        android:text="@string/set_language" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_language_summary"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:paddingTop="2dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_language_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lang_chinese"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:paddingRight="4dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- 模型配置列表 -->
+            <TextView
+                style="@style/SettingsLabel"
+                android:text="@string/set_models"
+                android:paddingBottom="6dp" />
+
+            <LinearLayout
+                android:id="@+id/list_models_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tv_no_models"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/hint_add_model"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:padding="20dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_add_model_inline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_default"
+                android:text="@string/btn_add_custom_model"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!-- 关于 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:text="@string/set_about" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set_about_text"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

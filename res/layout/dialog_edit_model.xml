@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="320dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+            android:text="@string/set_name" />
+
+        <EditText
+            android:id="@+id/et_model_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:hint="@string/set_name_hint"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+            android:text="@string/set_api_url"
+            android:paddingTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_api_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:hint="@string/set_api_url_hint"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:inputType="textUri" />
+
+        <TextView
+            style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+            android:text="@string/set_model_id"
+            android:paddingTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_model_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:hint="@string/set_model_id_hint"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+            android:text="@string/set_api_key"
+            android:paddingTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_api_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:hint="@string/set_api_key_hint"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingRight="6dp">
+
+                <TextView
+                    style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+                    android:text="@string/set_temperature" />
+
+                <EditText
+                    android:id="@+id/et_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit"
+                    android:hint="0.7"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="6dp">
+
+                <TextView
+                    style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+                    android:text="@string/set_max_tokens" />
+
+                <EditText
+                    android:id="@+id/et_max_tokens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit"
+                    android:hint="2048"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+            android:text="@string/set_system_prompt"
+            android:paddingTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_system_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:hint="@string/set_system_prompt_hint"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:minLines="2"
+            android:maxLines="4"
+            android:gravity="top|left" />
+
+        <TextView
+            style="@style/SettingsLabel"
+            android:textColor="@color/text_white"
+            android:text="@string/set_thinking_mode"
+            android:paddingTop="12dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_thinking_mode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rb_think_default"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/set_think_default"
+                android:textColor="@color/text_white"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <RadioButton
+                android:id="@+id/rb_think_on"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/set_think_on"
+                android:textColor="@color/text_white"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <RadioButton
+                android:id="@+id/rb_think_off"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/set_think_off"
+                android:textColor="@color/text_white"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_test_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/btn_default"
+            android:text="@string/set_test"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_test_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_reasoning"
+            android:padding="8dp"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

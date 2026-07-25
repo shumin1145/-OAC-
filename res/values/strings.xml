@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Old Ai Chat</string>
+    <string name="settings_title">设置</string>
+
+    <!-- 主界面 -->
+    <string name="hint_input">输入消息…</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_new_chat">新建对话</string>
+    <string name="btn_open_drawer">打开侧边栏</string>
+    <string name="btn_back">返回</string>
+    <string name="empty_chat">开始一段新对话吧</string>
+    <string name="empty_conversations">暂无对话</string>
+
+    <!-- 侧边栏 -->
+    <string name="drawer_title">对话列表</string>
+    <string name="action_settings">设置</string>
+    <string name="action_new">新建对话</string>
+    <string name="action_clear">清空所有对话</string>
+    <string name="action_delete">删除</string>
+    <string name="action_rename">重命名</string>
+
+    <!-- 设置 -->
+    <string name="set_models">模型配置</string>
+    <string name="set_models_summary">添加 / 编辑可用的 AI 模型</string>
+    <string name="set_active_model">当前使用模型</string>
+    <string name="set_no_active">未选择</string>
+    <string name="set_add_model">添加模型</string>
+    <string name="set_edit_model">编辑模型</string>
+    <string name="set_name">显示名称</string>
+    <string name="set_name_hint">如：DeepSeek / Kimi</string>
+    <string name="set_api_url">API 地址</string>
+    <string name="set_api_url_hint">如：https://api.deepseek.com/v1/chat/completions</string>
+    <string name="set_model_id">模型 ID</string>
+    <string name="set_model_id_hint">如：deepseek-chat / moonshot-v1-8k</string>
+    <string name="set_api_key">API Key</string>
+    <string name="set_api_key_hint">sk-xxxxxxxx</string>
+    <string name="set_temperature">温度 (Temperature)</string>
+    <string name="set_max_tokens">最大 Tokens</string>
+    <string name="set_system_prompt">系统提示词</string>
+    <string name="set_system_prompt_hint">你是一个有用的助手…</string>
+    <string name="set_save">保存</string>
+    <string name="set_cancel">取消</string>
+    <string name="set_delete">删除</string>
+    <string name="set_activate">设为当前</string>
+    <string name="set_stream">流式输出</string>
+    <string name="set_stream_summary">实时显示回复（关闭后一次性返回）</string>
+    <string name="set_language">语言</string>
+    <string name="set_language_summary">切换应用显示语言</string>
+    <string name="lang_chinese">让我们说中文</string>
+    <string name="lang_english">English文</string>
+    <string name="lang_select_title">选择语言</string>
+    <string name="privacy_title">Old Ai Chat 隐私协议</string>
+    <string name="privacy_message">1. 本软件为免费非商业AI聊天客户端，仅适配老旧安卓系统。\n\n2. 所有聊天记录、配置信息仅保存在您手机本地，卸载即删除，软件不会主动上传任何个人数据。\n\n3. 对话内容仅发送至您自行填写的第三方AI接口，软件不搭建服务器、不中转数据。\n\n4. 软件仅申请网络权限，不读取通讯录、文件、位置等隐私内容。\n\n5. 第三方AI服务的数据规则由对应服务商负责，使用本软件即代表您知悉并同意以上条款。</string>
+    <string name="privacy_agree">已阅读并且同意</string>
+    <string name="privacy_reject">不同意然后跑路</string>
+    <string name="set_about">关于</string>
+    <string name="set_about_text">软件名称：Old Ai Chat (开源发布版)\n\n当前版本：1.0 (基于1.5beta)\n\n反馈问题或者意见：QQ群 231804847\n\n系统兼容性：兼容 Android 2.3+\n\n协议支持：使用 OpenAI 兼容协议，具体 API 配置请参考模型的配置教程\n\n说明：开源版本不再提供公共api，请使用自己的。\n\nAPP项目首次构建时间:2026.7.21 是的,0721！\nCiallo～(∠・ω&lt; )⌒★\n\nAPP 更新时间:2026.7.25</string>
+    <string name="set_test">测试连接</string>
+    <string name="set_testing">测试中…</string>
+    <string name="set_test_ok">[成功] 测试成功</string>
+    <string name="set_test_fail">[失败] 测试失败</string>
+    <string name="set_thinking_mode">思考模式</string>
+    <string name="set_think_default">默认</string>
+    <string name="set_think_on">开启思考</string>
+    <string name="set_think_off">不思考</string>
+
+    <!-- 对话 -->
+    <string name="role_user">我</string>
+    <string name="role_assistant">AI</string>
+    <string name="role_system">系统</string>
+    <string name="reasoning_header">[思考过程]</string>
+    <string name="reasoning_expand">[思考过程+]</string>
+    <string name="reasoning_collapse">[思考过程-]</string>
+    <string name="msg_loading">思考中…</string>
+    <string name="msg_error">请求失败：%1$s</string>
+    <string name="msg_no_model">没有可用模型，请去设置添加！</string>
+    <string name="msg_empty_input">请输入内容</string>
+    <string name="msg_network">网络不可用</string>
+    <string name="msg_load_settings_failed">设置加载失败：%1$s</string>
+    <string name="msg_load_ui_failed">界面加载失败：%1$s</string>
+    <string name="msg_init_failed">初始化失败：%1$s</string>
+    <string name="msg_language_set_failed">语言设置失败：%1$s</string>
+    <string name="msg_drawer_load_failed">侧边栏加载失败</string>
+    <string name="msg_delete_failed">删除失败：%1$s</string>
+    <string name="msg_clear_failed">清空失败：%1$s</string>
+    <string name="msg_create_failed">新建失败：%1$s</string>
+    <string name="msg_send_failed">发送失败：%1$s</string>
+    <string name="msg_switched_to">已切换到 %1$s</string>
+    <string name="msg_add_model_first">请先添加模型</string>
+    <string name="msg_load_dialog_failed">对话框加载失败：%1$s</string>
+    <string name="msg_show_dialog_failed">对话框显示失败：%1$s</string>
+    <string name="msg_fill_name">请填写名称</string>
+    <string name="msg_fill_api_url">请填写 API 地址</string>
+    <string name="msg_fill_model_id">请填写模型 ID</string>
+    <string name="msg_fill_api_key">请填写 API Key</string>
+    <string name="msg_invalid_temperature">温度格式错误</string>
+    <string name="msg_invalid_max_tokens">最大 Tokens 格式错误</string>
+    <string name="msg_save_failed">保存失败：%1$s</string>
+    <string name="msg_copied">已复制</string>
+    <string name="msg_confirm_clear">确定要清空所有对话吗？</string>
+    <string name="msg_confirm_delete">确定删除此对话吗？</string>
+    <string name="msg_yes">确定</string>
+    <string name="msg_no">取消</string>
+    <string name="msg_default_title">新对话</string>
+    <string name="hint_add_model">点击右上角 + 添加模型</string>
+    <string name="btn_add_custom_model">添加自定义模型</string>
+
+    <!-- 输入对话框 -->
+    <string name="dlg_rename_title">重命名对话</string>
+    <string name="dlg_ok">确定</string>
+    <string name="dlg_cancel">取消</string>
+</resources>

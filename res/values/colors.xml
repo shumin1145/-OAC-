@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_main">#FFF5F5F5</color>
+    <color name="bg_drawer">#FF2C2C2C</color>
+    <color name="bg_chat_user">#FFBBDEFB</color>
+    <color name="bg_chat_ai">#FFFFFFFF</color>
+    <color name="bg_input">#FFFFFFFF</color>
+    <color name="bg_top_bar">#FF3D3D3D</color>
+    <color name="bg_send_normal">#FF1976D2</color>
+    <color name="bg_send_pressed">#FF1565C0</color>
+    <color name="bg_send_disabled">#FFB0B0B0</color>
+
+    <color name="text_primary">#FF222222</color>
+    <color name="text_secondary">#FF888888</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_drawer_title">#FFCCCCCC</color>
+    <color name="text_drawer_item">#FFE0E0E0</color>
+    <color name="text_drawer_active">#FFFFFFFF</color>
+
+    <color name="divider">#FFE0E0E0</color>
+    <color name="divider_dark">#FF444444</color>
+
+    <color name="item_drawer_normal">#FF2C2C2C</color>
+    <color name="item_drawer_pressed">#FF3D3D3D</color>
+    <color name="item_drawer_active">#FF1A1A1A</color>
+
+    <color name="accent">#FF1976D2</color>
+    <color name="error">#FFFF5252</color>
+</resources>
