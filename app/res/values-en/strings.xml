@@ -50,6 +50,9 @@
     <string name="lang_chinese">中文</string>
     <string name="lang_english">English</string>
     <string name="lang_select_title">Select language</string>
+    <string name="lang_restart_title">Restart Required</string>
+    <string name="lang_restart_message">Changing the language requires restarting the app. Restart now?</string>
+    <string name="lang_restart">Restart</string>
     <string name="privacy_title">Old Ai Chat Privacy Agreement</string>
     <string name="privacy_message">1. This software is a free, non-commercial AI chat client designed for old Android systems only.\n\n2. All chat records and configuration information are stored locally on your device and will be deleted upon uninstallation. The software does not actively upload any personal data.\n\n3. Conversation content is sent only to the third-party AI API endpoints that you configure yourself. The software does not operate servers or relay data.\n\n4. The software requests only network permission and does not access contacts, files, location, or other private content.\n\n5. Data policies of third-party AI services are governed by their respective providers. By using this software, you acknowledge and agree to the above terms.</string>
     <string name="privacy_agree">OK</string>

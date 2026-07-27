@@ -345,12 +345,23 @@ public class SettingsActivity extends Activity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             try {
-                                String lang = langs[which];
-                                mSettings.setLanguage(lang);
-                                applyLanguage(lang);
-                                updateLanguageDisplay();
-                                setResult(RESULT_OK);
+                                final String lang = langs[which];
                                 dialog.dismiss();
+                                new AlertDialog.Builder(SettingsActivity.this)
+                                        .setTitle(R.string.lang_restart_title)
+                                        .setMessage(R.string.lang_restart_message)
+                                        .setPositiveButton(R.string.lang_restart, new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                mSettings.setLanguage(lang);
+                                                applyLanguage(lang);
+                                                updateLanguageDisplay();
+                                                setResult(RESULT_OK);
+                                                finish();
+                                            }
+                                        })
+                                        .setNegativeButton(R.string.dlg_cancel, null)
+                                        .show();
                             } catch (Throwable t) {
                                 toast(safeMsg(t));
                             }

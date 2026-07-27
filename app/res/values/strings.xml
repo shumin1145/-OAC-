@@ -50,6 +50,9 @@
     <string name="lang_chinese">让我们说中文</string>
     <string name="lang_english">English文</string>
     <string name="lang_select_title">选择语言</string>
+    <string name="lang_restart_title">重启提示</string>
+    <string name="lang_restart_message">更改语言需要重启应用，是否立即重启？</string>
+    <string name="lang_restart">重启</string>
     <string name="privacy_title">Old Ai Chat 隐私协议</string>
     <string name="privacy_message">1. 本软件为免费非商业AI聊天客户端，仅适配老旧安卓系统。\n\n2. 所有聊天记录、配置信息仅保存在您手机本地，卸载即删除，软件不会主动上传任何个人数据。\n\n3. 对话内容仅发送至您自行填写的第三方AI接口，软件不搭建服务器、不中转数据。\n\n4. 软件仅申请网络权限，不读取通讯录、文件、位置等隐私内容。\n\n5. 第三方AI服务的数据规则由对应服务商负责，使用本软件即代表您知悉并同意以上条款。</string>
     <string name="privacy_agree">已阅读并且同意</string>
