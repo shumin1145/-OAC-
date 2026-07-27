@@ -34,7 +34,7 @@
     <string name="set_model_id">模型 ID</string>
     <string name="set_model_id_hint">如：deepseek-chat / moonshot-v1-8k</string>
     <string name="set_api_key">API Key</string>
-    <string name="set_api_key_hint">sk-xxxxxxxx</string>
+    <string name="set_api_key_hint">请输入 API Key</string>
     <string name="set_temperature">温度 (Temperature)</string>
     <string name="set_max_tokens">最大 Tokens</string>
     <string name="set_system_prompt">系统提示词</string>
