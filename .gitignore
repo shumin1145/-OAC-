@@ -1,0 +1,20 @@
+# Build output
+app/gen/
+app/obj/
+app/bin/
+app/kt_out.txt
+app/kt_err.txt
+
+# Keystore (contains private key)
+app/aiapp.keystore
+
+# IDE
+*.iml
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store

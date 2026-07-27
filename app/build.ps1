@@ -4,7 +4,7 @@
 $ErrorActionPreference = "Stop"
 
 $ROOT = Split-Path -Parent $MyInvocation.MyCommand.Path
-$SDK  = "C:\AndroidSDK"
+$SDK  = if ($env:ANDROID_HOME) { $env:ANDROID_HOME } else { "C:\AndroidSDK" }
 $BT   = "$SDK\build-tools\30.0.3"
 $PLAT = "$SDK\platforms\android-33\android.jar"
 $KS   = "$ROOT\aiapp.keystore"
