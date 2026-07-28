@@ -32,9 +32,12 @@ public class SettingsManager {
     private static SettingsManager sInstance;
 
     private final SharedPreferences mPrefs;
+    private final SecureKeyStore mKeyStore;
 
     private SettingsManager(Context context) {
-        mPrefs = context.getApplicationContext().getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        Context appContext = context.getApplicationContext();
+        mPrefs = appContext.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        mKeyStore = SecureKeyStore.create(appContext);
     }
 
     public static synchronized SettingsManager get(Context context) {
@@ -62,7 +65,7 @@ public class SettingsManager {
                 m.name = o.optString("name", "");
                 m.apiUrl = o.optString("api_url", "");
                 m.modelId = o.optString("model_id", "");
-                m.apiKey = o.optString("api_key", "");
+                m.apiKey = mKeyStore.getApiKey(m.id);
                 m.temperature = o.optDouble("temperature", 0.7);
                 m.maxTokens = o.optInt("max_tokens", 2048);
                 m.systemPrompt = o.optString("system_prompt", "");
@@ -99,7 +102,7 @@ public class SettingsManager {
                 o.put("name", m.name == null ? "" : m.name);
                 o.put("api_url", m.apiUrl == null ? "" : m.apiUrl);
                 o.put("model_id", m.modelId == null ? "" : m.modelId);
-                o.put("api_key", m.apiKey == null ? "" : m.apiKey);
+                mKeyStore.saveApiKey(m.id, m.apiKey == null ? "" : m.apiKey);
                 // 防止 NaN/Infinity 抛 JSONException
                 double temp = m.temperature;
                 if (Double.isNaN(temp) || Double.isInfinite(temp)) temp = 0.7;
@@ -144,6 +147,7 @@ public class SettingsManager {
             }
         }
         saveModels(list);
+        mKeyStore.deleteApiKey(modelId);
         if (modelId != null && modelId.equals(getActiveModelId())) {
             // 删除的是当前激活模型，清空选择
             setActiveModelId(null);
